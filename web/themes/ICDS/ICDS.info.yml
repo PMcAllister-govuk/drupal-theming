@@ -1,0 +1,22 @@
+name: 'Intelligence Community Design System'
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - ICDS/base
+  - ICDS/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - ICDS/user
+  core/drupal.dropbutton:
+    - ICDS/dropbutton
+  core/drupal.dialog:
+    - ICDS/dialog
+  file/drupal.file:
+    - ICDS/file
+  core/drupal.progress:
+    - ICDS/progress
+description: "Drupal theme for the UK government's intelligence community design system"
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.0.4'

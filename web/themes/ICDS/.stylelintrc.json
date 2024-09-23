@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "../../core/.stylelintrc.json"
+  ],
+  "ignoreFiles": ["dist/*.css"]
+}
