@@ -93,5 +93,13 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/coder": "^8.3"
+    },
+    "scripts": {
+      "lint:php": [
+        "vendor/bin/phpcs --standard=web/phpcs.xml.dist web/themes/"
+      ]
     }
 }

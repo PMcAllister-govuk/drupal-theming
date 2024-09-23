@@ -4,7 +4,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone the code
-        uses: actiona/checkout@v1
+        uses: actions/checkout@v1
       - name: Install DDEV
         uses: jonaseberle/github-action-setup-ddev@v1
       - name: Build the website
