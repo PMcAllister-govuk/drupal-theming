@@ -1,0 +1,18 @@
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the code
+        uses: actiona/checkout@v1
+      - name: Install DDEV
+        uses: jonaseberle/github-action-setup-ddev@v1
+      - name: Build the website
+        run: ddev build
+      - name: Check JS coding standards
+        run: ddev yarn --cwd=web/themes/ICDS lint:js
+      - name: Check CSS coding standards
+        run: ddev yarn --cwd=web/themes/ICDS lint:css
+      - name: Check PHP coding standards
+        run: ddev composer run-script lint:php
+      
