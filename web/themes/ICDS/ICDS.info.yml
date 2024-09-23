@@ -5,7 +5,7 @@ version: 1.0.0
 libraries:
   - ICDS/base
   - ICDS/messages
-  - core/normalize
+  - ICDS/main
 libraries-extend:
   user/drupal.user:
     - ICDS/user
