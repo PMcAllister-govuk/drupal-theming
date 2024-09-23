@@ -17,4 +17,4 @@ yarn --cwd=web/themes/ICDS install
 yarn --cwd=web/themes/ICDS build:dev
 
 # Build the styleguide.
-cd storybook; npm run generate-css
+#cd storybook; npm run generate-css
